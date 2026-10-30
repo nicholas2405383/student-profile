@@ -1,0 +1,157 @@
+<!--
+    Name: Nicholas Rose
+    Student ID: 2405383
+    Module Code: CIT2011 (Web Programming)
+ 
+    Lab Activity:  Student Profile Page
+    Task: Create a Student Profile Pagee using only HTML and CSS -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">                                         
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Student Profile Page</title>                           
+    <link rel="stylesheet" href="style.css">                        
+</head>
+
+
+
+<body>
+    
+    <header id="top">
+        <h1>University of Technology</h1> 
+        <p>Student Profile Page - <span class="highlight">School of Computing &amp; IT</span></p>
+    </header>
+
+    <main>
+   
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-box">
+                <img src="photo.jpg" alt="Photograph of me">
+
+                <p><strong>Name:</strong> Nicholas Rose</p>
+                <p><strong>Programme:</strong> BSc. Computing</p>
+                <p><strong>Year of Study:</strong> Year 3</p>
+                <p><strong>Biography:</strong> ill edit this later brb</p>
+             
+            </div>
+        </section>
+
+
+        <section id="courses">
+            <h2>My Courses</h2>
+            <ol>                                     <!-- ol makes it a listt -->
+                <li>CMP3040 - Forensic Computing</li>                <!--one at a time--> 
+                <li>CIT2011 - Web Programming</li>
+                <li>CMP2019 - Software Engineering: Analysis &amp; Design</li>
+                <li>HUM3010 - Professional, Ethical &amp; Legal Implications of Computing Systems</li>
+                <li>CIT4024 - Information Technology Project Management</li>
+            </ol>
+        </section>
+
+        <!-- rmb to add the schedule -->
+
+        <section id="schedule">
+            <h2>Weekly Schedule</h2>
+            <table>                                 
+                <tr>                                 
+                    <th>Course</th>                  
+                    <th>Day</th>
+                    <th>Time</th>
+                </tr>
+
+                <tr>
+                    <td>CMP3040 Forensic Computing</td>         
+                    <td>Monday</td>
+                    <td>2:00 PM - 4:50 PM</td>
+                </tr>
+                <tr>
+                    <td>CIT2011 Web Programming</td>
+                    <td>Monday</td>
+                    <td>6:00 PM - 7:50 PM</td>
+                </tr>
+
+                <tr>
+
+                    <td>CMP2019 Software Engineering</td>
+                    <td>Monday</td>
+                    <td>8:00 PM - 8:50 PM</td>
+                </tr>
+
+                <tr>
+                    <td>CMP3040 Forensic Computing</td>
+                    <td>Wednesday</td>
+                    <td>7:00 PM - 8:50 PM</td>
+                </tr>
+
+                <tr>
+                    <td>HUM3010 Ethical &amp; Legal Implications</td>
+                    <td>Thursday</td>
+                    <td>9:00 AM - 10:50 AM</td>
+                </tr>
+
+                <tr>
+                    <td>CIT4024 IT Project Management</td>
+                    <td>Thursday</td>
+                    <td>6:00 PM - 6:50 PM</td>
+                </tr>
+
+                <tr>
+                    <td>CIT2011 Web Programming</td>
+                    <td>Thursday</td>
+                    <td>8:00 PM - 8:50 PM</td>
+                </tr>
+
+                <tr>
+                    <td>HUM3010 Ethical &amp; Legal Implications</td>
+                    <td>Friday</td>
+                    <td>10:00 AM - 10:50 AM</td>
+                </tr>\
+
+                <tr>
+                    <td>CMP2019 Software Engineering</td>
+                    <td>Friday</td>
+                    <td>5:00 PM - 6:50 PM</td>
+                </tr>
+                
+                <tr>
+                    <td>CIT4024 IT Project Management</td>
+                    <td>Friday</td>
+                    <td>7:00 PM - 8:50 PM</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- number -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="mailto:nicholasnickoyyrose2gmail.com" method="post">
+                <!-- form collects what the user types -->
+
+                <label for="name">Name:</label>     
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">  
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5"></textarea>   
+
+                <button type="submit">Submit</button>          
+            </form>
+        </section>
+    </main>
+
+   
+    <footer>
+        <p>Nicholas Rose</p>
+        <p>&copy; 2026 All rights reserved.</p>      <!-- &copy; = copyright symbol -->
+    </footer>
+
+</body>
+</html>
+
